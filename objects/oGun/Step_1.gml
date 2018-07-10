@@ -30,6 +30,7 @@ recoil = max(0,recoil-1); //decreases every step
 if ( (mouse_check_button(mb_left) or gamepad_button_check(oPlayer.gp_current,gp_shoulderrb)) and (firingDelay < 0)) {
 	recoil = 4;
 	firingDelay = 5;
+	ScreenShake(2,10);
 	with (instance_create_layer(x,y,"Bullet",oBullet)) {
 		accuracy = random_range(-3,3); //variable must exist for all bullets created
 		speed = 25;

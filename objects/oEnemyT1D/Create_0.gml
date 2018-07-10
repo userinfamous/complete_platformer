@@ -6,3 +6,5 @@ done = 0;
 
 image_speed = 0;
 image_xscale = sign(hspd) + 0.01;	//patched on again
+
+ScreenShake(6,25);
